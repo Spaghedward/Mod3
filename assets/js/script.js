@@ -61,12 +61,12 @@ function createPassword() {
     console.log(charArray)
 
     for (i = 0; i < passwordLength; i++) {
-      generatedPassword = charArray[Math.floor(Math.random() * charArray.length)];
+      generatedPassword = generatedPassword + charArray[Math.floor(Math.random() * charArray.length)];
   }
   
 
   var passwordText = document.querySelector("#password");
-  passwordText.value = "poop";
+  passwordText.value = generatedPassword;
 
 }
 
